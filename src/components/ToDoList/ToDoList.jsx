@@ -8,7 +8,7 @@ const {todos} = useTodosContext()
    <ul className="list-group">
      {
        todos.length ?
-       todos.map((todo, ind)=> <TodoItem key={todo.id} ind={ind} todo={todo}/>) 
+          todos.map((todo, ind) => <TodoItem key={todo.id} ind={ind} todo={todo} id={todo.id} />) 
        : <p>Nothing  to do</p>
      }
    </ul>
